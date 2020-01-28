@@ -1,0 +1,28 @@
+{
+  "title": "Communicator",
+  "description": "Make a grid of images that play audio when clicked. Upload your own images and audio.",
+  "majorVersion": 1,
+  "minorVersion": 0,
+  "patchVersion": 0,
+  "runnable": 1,
+  "author": "Haridustehnoloogiakeskus",
+  "license": "cc-by-sa",
+  "machineName": "H5P.Communicator",
+  "coreApi": {
+    "majorVersion": 1,
+    "minorVersion": 0
+  },
+  "preloadedJs": [
+    { "path": "src/scripts/communicator.js" }
+  ],
+  "preloadedCss": [
+    { "path": "src/styles/communicator.css" }
+  ],
+  "editorDependencies": [
+    {
+      "machineName": "H5PEditor.VerticalTabs",
+      "majorVersion": 1,
+      "minorVersion": 3
+    }
+  ] 
+}

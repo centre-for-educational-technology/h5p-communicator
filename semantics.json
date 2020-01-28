@@ -1,0 +1,50 @@
+[ 
+  {
+    "label": "Communicator rows",
+    "name": "rows",
+    "type": "list",
+    "min": 3,
+    "widgets": [
+      {
+        "name": "VerticalTabs",
+        "label": "Default"
+      }
+    ],
+    "entity": "row",
+    "field": {
+      "label": "Row",
+      "name": "row",
+      "type": "group",
+      "fields": [
+        {
+          "label": "Row pictures",
+          "name": "pictures",
+          "type": "list",
+          "min": 3,
+          "entity": "picture",
+          "field": {
+            "label": "Picture",
+            "name": "picture",
+            "type": "group",
+            "fields": [
+              {
+                "label": "Image",
+                "name": "image",
+                "type": "image",
+                "max": 1,
+                "disableCopyright": true
+              },
+              {
+                "label": "Audio",
+                "name": "audio",
+                "type": "audio",
+                "max": 1,
+                "disableCopyright": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+]
