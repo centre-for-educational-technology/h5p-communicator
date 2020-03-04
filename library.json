@@ -3,8 +3,11 @@
   "description": "Make a grid of images that play audio when clicked. Upload your own images and audio.",
   "majorVersion": 1,
   "minorVersion": 0,
-  "patchVersion": 0,
+  "patchVersion": 1,
   "runnable": 1,
+  "embedTypes": [
+    "iframe"
+  ],
   "author": "Haridustehnoloogiakeskus",
   "license": "cc-by-sa",
   "machineName": "H5P.Communicator",

@@ -5,9 +5,12 @@ function constructor(options, id) {
   this.options = options;
   this.id = id;
 
-  this.playAudio = (url) => {
-    var a = new Audio(url);
-    a.play();
+  this.playAudio = (audio) => {
+    if (audio) {
+      url = H5P.getPath(audio.path, that.id);
+      var a = new Audio(url);
+      a.play();
+    }
   };
 }
 
@@ -33,7 +36,10 @@ constructor.prototype.attach = function ($container) {
       $row.append('<td style="width:' + 100 / width + '%;"><img src="' + H5P.getPath(cell.image.path, this.id) + '"></td>');
 
       var $img = $row.find('td:last-of-type img');
-      $img.click(function () { that.playAudio(H5P.getPath(cell.audio[0].path, that.id)); });
+      $img.click(function () { that.playAudio(cell.audio); });
+      $img.on('load', function() {
+        H5P.trigger(that, 'resize');
+      });
     });
   });
 }
