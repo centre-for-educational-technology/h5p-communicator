@@ -7,7 +7,7 @@ function constructor(options, id) {
 
   this.playAudio = (audio) => {
     if (audio) {
-      url = H5P.getPath(audio.path, that.id);
+      url = H5P.getPath(audio[0].path, id);
       var a = new Audio(url);
       a.play();
     }
