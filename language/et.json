@@ -1,26 +1,28 @@
-[ 
-  {
-    "label": "Kommunikaatori read",
-    "entity": "rida",
-    "field": {
-      "label": "Rida",
-      "fields": [
-        {
-          "label": "Rea pildid",
-          "entity": "pilt",
-          "field": {
-            "label": "Pilt",
-            "fields": [
-              {
-                "label": "Pilt"
-              },
-              {
-                "label": "Heli"
-              }
-            ]
+{
+  "semantics": [ 
+    {
+      "label": "Kommunikaatori read",
+      "entity": "rida",
+      "field": {
+        "label": "Rida",
+        "fields": [
+          {
+            "label": "Rea pildid",
+            "entity": "pilt",
+            "field": {
+              "label": "Pilt",
+              "fields": [
+                {
+                  "label": "Pilt"
+                },
+                {
+                  "label": "Heli"
+                }
+              ]
+            }
           }
-        }
-      ]
+        ]
+      }
     }
-  }
-]
+  ]
+}

@@ -1,26 +1,28 @@
-[ 
-  {
-    "label": "Communicator rows",
-    "entity": "row",
-    "field": {
-      "label": "Row",
-      "fields": [
-        {
-          "label": "Row pictures",
-          "entity": "picture",
-          "field": {
-            "label": "Picture",
-            "fields": [
-              {
-                "label": "Image"
-              },
-              {
-                "label": "Audio"
-              }
-            ]
+{
+  "semantics": [ 
+    {
+      "label": "Communicator rows",
+      "entity": "row",
+      "field": {
+        "label": "Row",
+        "fields": [
+          {
+            "label": "Row pictures",
+            "entity": "picture",
+            "field": {
+              "label": "Picture",
+              "fields": [
+                {
+                  "label": "Image"
+                },
+                {
+                  "label": "Audio"
+                }
+              ]
+            }
           }
-        }
-      ]
+        ]
+      }
     }
-  }
-]
+  ]
+}
